@@ -1,6 +1,6 @@
 # Real-Time Leaderboard System
 
-This project is a real-time leaderboard system built with Go, Fiber, GORM, PostgreSQL, and Redis. It ranks users based on their scores in various games or activities, providing real-time updates and efficient querying using Redis sorted sets.
+This project is a real-time leaderboard system built with Go, Fiber, GORM, PostgreSQL, and Redis. It ranks users based on their scores in various games or activities, providing real-time updates and efficient querying using Redis sorted sets. References [Roadmap SH Project](https://roadmap.sh/projects/realtime-leaderboard-system)
 
 ## Features
 

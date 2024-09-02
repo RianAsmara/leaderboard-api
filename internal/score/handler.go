@@ -53,7 +53,17 @@ func (h *Handler) AddScore(c *fiber.Ctx) error {
 	return c.SendStatus(fiber.StatusOK)
 }
 
-// GetLeaderboard retrieves the leaderboard
+// GetOrderByCode Getting Order by Code
+//
+//	@Summary        Getting Order by Code
+//	@Description    Getting Order by Code in detail
+//	@Tags            Orders
+//	@Accept            json
+//	@Produce        json
+//	@Param            x-correlationid    header        string    true    "code of Order"
+//	@Param            orderCode        path        string    true    "code of Order"
+//	@Success        200                {string}    string
+//	@Router            /orders/code/{orderCode} [get]
 func (h *Handler) GetLeaderboard(c *fiber.Ctx) error {
 	scores, err := h.Service.GetLeaderboard()
 	if err != nil {
